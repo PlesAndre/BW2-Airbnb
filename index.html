@@ -12,10 +12,7 @@
   </head>
   <body>
     <header>
-      <nav
-        class="navbar navbar-expand-lg bg-body-tertiary"
-        data-bs-theme="dark"
-      >
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -97,35 +94,54 @@
         </div>
       </nav>
       <div id="ricerca">
-        <div>
-          <input type="text" placeholder="Dove vuoi andare?" />
-          <input type="date" placeholder="Aggiungi Date" />
-          <input type="date" />
-          <input type="text" placeholder="Aggiungi ospiti" />
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-search"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-              /></svg
-            >Cerca
-          </button>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="input-container">
+            <div>Location</div>
+            <input type="text" placeholder="Dove vuoi andare?" />
+          </div>
+
+          <div class="input-container">
+            <div>Check-in</div>
+            <input type="date" placeholder="Aggiungi Date" />
+          </div>
+
+          <div class="input-container">
+            <div>Check-out</div>
+            <input type="date" placeholder="Aggiungi date" />
+          </div>
+
+          <div class="input-container">
+            <div>
+              <div>Guests</div>
+              <input type="text" placeholder="Aggiungi ospiti" />
+            </div>
+            <div class="button-container">
+              <button type="button" class="search-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <!--QUALCOSA-->
+      <div>ansdiosadnasd nasoinddpasmdmasdm</div>
     </main>
 
     <footer class="pt-5">
-      <div class="row g-0" div="otherInfo">
+      <div class="row g-0" id="otherInfo">
         <div class="col-sm-1"></div>
         <div class="col-12 col-sm-6 col-md-2 mb-3">
           <h5>Assistenza</h5>
