@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-between;
+}
+
+img {
+  cursor: pointer;
+}
+
+#ricerca {
+  box-shadow: 0px 0px 1px 1px #ebebeb;
+  margin-top: 0px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1px 10px 0 0;
+  display: inline-block;
+}
+
+.gallery-container {
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+}
+
+.gallery-items {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+.large-photo {
+  flex: 1.5;
+  padding-right: 10px;
+}
+
+.large-photo img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.small-photos img:nth-child(2) {
+  border-top-right-radius: 15px;
+}
+
+.small-photos img:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+.small-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  flex: 1;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h4 {
+  margin-top: 80px;
+}
+
+.back {
+  display: none;
+}
+.gallery-texts {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+a ion-icon {
+  font-size: small;
+}
+
+article li {
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+::marker {
+  font-size: 3em;
+}
+
+article li:first-child {
+  list-style-image: url(assets/Icons/home-outline.svg);
+}
+
+article li:nth-child(2) {
+  list-style-image: url(assets/Icons/sparkles-outline.svg);
+}
+
+article li:nth-child(3) {
+  list-style-image: url(assets/Icons/location-outline.svg);
+}
+
+article li:nth-child(4) {
+  list-style-image: url(assets/Icons/calendar-outline.svg);
+}
+
+article li:last-child {
+  list-style-image: url(assets/Icons/book-outline.svg);
+}
+
+article li p {
+  color: darkgray;
+  font-weight: 300;
+  margin: auto;
+}
+
+.list-card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px 3px #ccc;
+  padding: 4px;
+  background: #f8f9fa;
+  --bs-border-width: 0;
+}
+
+.card-header {
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  border-radius: 30px;
+  background: #f8f9fa;
+}
+
+.card-title {
+  background-color: #f8f9fa;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card-header p {
+  font-size: 10px;
+}
+
+.form-container {
+  max-width: 900px;
+  margin-left: 0;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  max-width: 600px;
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.date-fields {
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+  background: #f8f9fa;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-grow: 1;
+  border-radius: 15px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 10px 2px;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  color: #222;
+  margin: 0 2px 0 0;
+}
+
+input::placeholder {
+  color: #666;
+  font-size: 14px;
+}
+
+input:focus {
+  background-color: #f7f7f7;
+  outline: none;
+  box-shadow: 0 0 0 2px black;
+}
+
+.guests-field {
+  margin-top: 2px;
+  width: 100%;
+}
+
+#date1 {
+  border-radius: 0;
+  border-top-left-radius: 15px;
+}
+
+#date2 {
+  border-radius: 0;
+  border-top-right-radius: 15px;
+}
+
+#guests {
+  border-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.reviews {
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-right: 20px;
+}
+
+.profile-head {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.profile-text {
+  margin-left: 15px;
+}
+
+.reviews .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .back {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .back {
+    display: flex;
+    font-size: 30px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .links ion-icon {
+    font-size: 13px;
+  }
+
+  .gallery-items {
+    margin-top: 10px;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .profile {
+    margin-right: 20px;
+  }
+
+  .profile-card {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 600px;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    border: none;
+    height: auto;
+  }
+
+  .profile-head {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+  }
+  .profile-review {
+    padding-left: 10px;
+    width: 500px;
+    height: auto;
+    word-wrap: break-word;
+  }
+
+  div.scroll-container {
+    height: 200px;
+    background-color: #f8f9fa;
+    overflow: auto;
+    padding: 10px;
+  }
+}

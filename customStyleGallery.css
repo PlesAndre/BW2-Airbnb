@@ -1,0 +1,144 @@
+.btn-secondary{
+    background-color: white;
+    border: none;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active, .btn:hover{
+    background-color: white;
+    border: none;
+}
+
+#titolo {
+    display: flex;
+    flex-direction: row;
+    gap: 0 15px;
+}
+
+main div div p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main div div:nth-child(2) button{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #FD365B;
+    border: none;
+    color: white;    
+}
+
+main div div:nth-child(3) button{
+    background-color: #F8F9FA;
+    border-radius: 30px;
+    border: 1px solid grey;
+    padding: 0 15px;
+    margin-top: 15px;
+}
+
+main .spazioMain p{
+    margin: 0
+}
+
+.spazioMain p{
+    margin: 15px 0 0 0;
+}
+
+.spanCardInterno{
+    font-weight: normal;
+    font-size: .8em;
+}
+
+.cardTitolo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.cardTitolo p{
+    font-size: 1em;
+}
+
+.card img{
+    border-radius: 15px;
+}
+
+.card{
+    border:none;
+    cursor: pointer;
+}
+
+.card-text{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.spazioMain{
+    margin: 0 150px;
+}
+
+#subtitle{
+    margin: 15px 0 15px 0;
+}
+
+.spazioMain .mostraAltro{
+    display: flex;
+    justify-content: center;
+}
+
+.spazioMain .mostraAltro button{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+.showGallery{
+    display: flex;
+}
+
+.col a{
+    text-decoration: none;
+}
+
+.card:hover{
+    -webkit-box-shadow: -4px 3px 9px 2px #EBEBEB; 
+    box-shadow: -4px 3px 9px 2px #EBEBEB;
+    padding: 0 0 0 5px; 
+}
+
+@media screen and (max-width:1315px){
+    .spazioMain{
+        margin: 0 15px;
+    }
+}
+
+.hamburger .prima{
+    transition: transform linear .2s;
+}
+
+.hamburger:hover .prima{
+    transform: rotate(45deg) translate(1px, 10px);
+}
+
+.hamburger .seconda{
+    transition: transform linear .2s;
+}
+
+.hamburger:hover .seconda{
+    transform: scale(0);
+}
+
+.hamburger .terza{
+    transition: transform linear .2s;
+}
+
+.hamburger:hover .terza{
+    transform: rotate(-45deg) translate(0, -10px);
+}
+
