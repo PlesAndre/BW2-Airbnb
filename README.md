@@ -12,7 +12,7 @@ Il Airbnb Clone Project è un clone semplificato del sito di prenotazione Airbnb
 ## Installazione e utilizzo
 Clona il repository:
 
-git clone https://github.com/tuo-username/airbnb-clone.git
+git clone https://github.com/PlesAndre/BW2-Airbnb.git
 
 Apri il file index.html nel tuo browser per visualizzare la pagina principale.
 
